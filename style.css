@@ -4,6 +4,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
+flex-direction: column;
 
 }
 
@@ -12,5 +13,23 @@ flex-wrap: wrap;
 display: flex;
 
 flex-wrap: wrap;
-
+border-radius: 30px;
 }
+.radio-toolbar {
+width: 100%;
+}
+
+
+
+.radio-toolbar input[type="radio"] {
+
+    display: none;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    background-color: aqua;
+    width: 32%;
+    padding: 2%;
+}
+

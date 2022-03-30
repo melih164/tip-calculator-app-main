@@ -3,8 +3,6 @@ var bill = 0;
 var fivePro = 0;
 var numOfP = 0;
 
-var totalPP = 0;
-var tipPP = 0;
 
 $("input.bill").change(function (event) {
 
@@ -21,6 +19,14 @@ $("input[type='radio']").click(function () {
     
     console.log(fivePro)
 
+})
+
+$("input.custom").change(function(event) {
+    var ratio = parseFloat(event.target.value)/100;
+
+    fivePro = bill * ratio;
+    
+    console.log(fivePro)
 })
 
 $("input.numberOfPeople").change(function (event) {

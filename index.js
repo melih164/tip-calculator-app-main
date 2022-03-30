@@ -54,4 +54,5 @@ $("button").click(function () {
 
     document.getElementById('123').value = '';
     document.getElementById('12').value = '';
+    document.getElementsById('6').value = '';
 })

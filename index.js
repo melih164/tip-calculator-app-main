@@ -40,9 +40,9 @@ $("input.numberOfPeople").on("input", function (event) {
 
     var tipPP = fivePro / numOfP;
 
-    $("p.totalProPerson").text( "$"+parseInt(totalPP));
+    $("p.totalProPerson").text( "$"+parseFloat(totalPP).toFixed(2));
     
-    $("p.tipProPerson").text("$"+parseInt(tipPP));
+    $("p.tipProPerson").text("$"+parseFloat(tipPP).toFixed(2));
    
 
 })
@@ -59,4 +59,11 @@ $("button").click(function () {
 
     $("input[type='radio']").prop('checked', false);
     
+})
+
+$("button.reset").click(function () {
+    
+$("button.reset").css("background-color","hsl(172, 64%, 68%)");
+
+
 })

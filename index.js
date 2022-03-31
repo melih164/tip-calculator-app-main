@@ -27,9 +27,10 @@ $("input.custom").change(function(event) {
     fivePro = bill * ratio;
     
     console.log(fivePro)
+    $("input[type='radio']").prop('checked', false);
 })
 
-$("input.numberOfPeople").change(function (event) {
+$("input.numberOfPeople").on("input", function (event) {
 
     numOfP = parseInt(event.target.value);
 
@@ -54,5 +55,8 @@ $("button").click(function () {
 
     document.getElementById('123').value = '';
     document.getElementById('12').value = '';
-    document.getElementsById('6').value = '';
+    document.getElementById('6').value = '';
+
+    $("input[type='radio']").prop('checked', false);
+    
 })

@@ -1,22 +1,23 @@
 .flex-top {
-min-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 
 }
 
 .flex-container {
 
-display: flex;
+    display: flex;
 
-flex-wrap: wrap;
-border-radius: 30px;
+    flex-wrap: wrap;
+    border-radius: 30px;
 }
+
 .radio-toolbar {
-width: 100%;
+    width: 100%;
 }
 
 
@@ -33,3 +34,6 @@ width: 100%;
     padding: 2%;
 }
 
+.radio-toolbar input[type="radio"]:checked+label {
+    background-color: rgb(130, 19, 124);
+}

@@ -1,3 +1,8 @@
+#body {
+ background-color:  hsl(185, 41%, 84%);
+ font-family: 'Space Mono', monospace;
+}
+
 .flex-top {
     min-height: 100vh;
     display: flex;
@@ -36,4 +41,9 @@
 
 .radio-toolbar input[type="radio"]:checked+label {
     background-color: rgb(130, 19, 124);
+}
+
+.reset {
+
+border-radius: 15px;
 }

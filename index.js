@@ -21,7 +21,7 @@ $("input[type='radio']").click(function () {
 
 })
 
-$("input.custom").change(function(event) {
+$("input.custom").on("input",function(event) {
     var ratio = parseFloat(event.target.value)/100;
 
     fivePro = bill * ratio;
